@@ -8,4 +8,4 @@ responsive e-commerce app UI by using flutter.
 
 ### Previews of Final UI
 
-![Screenshot](assets/images/Screen Shot 2020-12-28 at 4.46.23 PM.png)
+![Screenshot](https://github.com/flevor-end/E-commerce-flutter-UI/blob/master/assets/images/Screen%20Shot%202020-12-28%20at%204.46.23%20PM.png)
