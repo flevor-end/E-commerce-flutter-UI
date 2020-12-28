@@ -8,17 +8,4 @@ responsive e-commerce app UI by using flutter.
 
 ### Previews of Final UI
 
-…or create a new repository on the command line
-echo "# repoprueba" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/flevor-end/repoprueba.git
-git push -u origin main
-                
-
-…or push an existing repository from the command line                
-git remote add origin https://github.com/flevor-end/repoprueba.git
-git branch -M main
-git push -u origin main
+![Screenshot](assets/images/Screen Shot 2020-12-28 at 4.46.23 PM.png)
