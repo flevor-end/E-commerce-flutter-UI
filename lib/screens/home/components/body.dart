@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'categories.dart';
+import 'categories_plus.dart';
 import 'discount_banner.dart';
 import 'home_header.dart';
 import 'popular_products.dart';
@@ -19,7 +20,11 @@ class Body extends StatelessWidget {
           SizedBox(
             height: (20),
           ),
-          DiscountBanner(),
+          CategoriesPlus(),
+          //DiscountBanner(),
+          SizedBox(
+            height: (20),
+          ),
           Categories(),
           SizedBox(
             height: (30),

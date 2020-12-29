@@ -55,7 +55,7 @@ class ProductCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
-                      color: Color(0xFFFF7110),
+                      color: kPrimaryColor,
                     ),
                   ),
                   InkWell(
@@ -73,7 +73,7 @@ class ProductCard extends StatelessWidget {
                       child: SvgPicture.asset(
                         "assets/icons/Heart Icon_2.svg",
                         color: product.isFavourite
-                            ? Color(0xFFFF4848)
+                            ? kPrimaryColor
                             : Color(0xFFD8DEE4),
                       ),
                     ),
