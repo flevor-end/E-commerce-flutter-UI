@@ -47,6 +47,7 @@ class ProductCard extends StatelessWidget {
                 height: 10,
               ),
               Shoppers(),
+              buildTimer(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -84,6 +85,23 @@ class ProductCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Row buildTimer() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        //Text("This code will expired in "),
+        TweenAnimationBuilder(
+          tween: Tween(begin: 60.0, end: 0.0),
+          duration: Duration(seconds: 60),
+          builder: (_, value, child) => Text(
+            "00:${value.toInt()}",
+            style: TextStyle(color: kPrimaryColor),
+          ),
+        ),
+      ],
     );
   }
 }
