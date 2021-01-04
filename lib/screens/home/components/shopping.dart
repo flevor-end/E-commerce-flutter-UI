@@ -3,11 +3,17 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:masdamas/constants.dart';
 import 'package:masdamas/size_config.dart';
 
+import 'section_title.dart';
+
 class Shopping extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
+        SectionTitle(
+          text: "Shopping",
+          press: () {},
+        ),
         Container(
           height: 150,
           child: Stack(
@@ -19,7 +25,7 @@ class Shopping extends StatelessWidget {
               ),
               Positioned(
                   child: Container(
-                width: getProportionateScreenWidth(300),
+                width: getProportionateScreenWidth(340),
                 height: 80,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -63,7 +69,6 @@ class Shopping extends StatelessWidget {
                               ]))
                         ],
                       ),
-
                       //Enviado
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -99,41 +104,45 @@ class Shopping extends StatelessWidget {
               Positioned(
                 //left: (22 * totalUser).toDouble(),
                 child: SizedBox(
-                  height: getProportionateScreenWidth(100),
-                  width: getProportionateScreenWidth(100),
+                  height: getProportionateScreenWidth(110),
+                  width: getProportionateScreenWidth(110),
                   child: FlatButton(
                     padding: EdgeInsets.zero,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
+                      borderRadius: BorderRadius.circular(55),
                     ),
                     color: kPrimaryColor,
                     onPressed: () {},
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          height: 42,
-                          width: 42,
-                          child:
-                              SvgPicture.asset("assets/icons/COMPARTIDO.svg"),
-                        ),
-                        SizedBox(
-                          height: kDefaultPadding / 8,
-                        ),
-                        RichText(
-                            text: TextSpan(
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                                children: [
-                              TextSpan(
-                                  text: "Compartido",
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                          vertical: getProportionateScreenWidth(20)),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 36,
+                            width: 36,
+                            child:
+                                SvgPicture.asset("assets/icons/COMPARTIDO.svg"),
+                          ),
+                          SizedBox(
+                            height: kDefaultPadding / 8,
+                          ),
+                          RichText(
+                              text: TextSpan(
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.w600,
-                                  ))
-                            ]))
-                      ],
+                                    color: Colors.white,
+                                  ),
+                                  children: [
+                                TextSpan(
+                                    text: "Compartido",
+                                    style: TextStyle(
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w600,
+                                    ))
+                              ]))
+                        ],
+                      ),
                     ),
                   ),
                 ),

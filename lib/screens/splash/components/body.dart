@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:masdamas/constants.dart';
-import 'package:masdamas/screens/sign_in/sign_in_screen.dart';
+import 'package:masdamas/screens/home/home.screen.dart';
 import 'package:masdamas/size_config.dart';
 
 // mejores practicas
@@ -24,10 +24,10 @@ class _BodyState extends State<Body> {
       "text": "Ayudamos a la gente a conectarse \nCon Masdamas",
       "image": "assets/images/splash_2.png"
     },
-    {
-      "text": "Mostramos la forma mas facil \nde compartir y comprar ",
-      "image": "assets/images/splash_3.png"
-    },
+    //{
+    //"text": "Mostramos la forma mas facil \nde compartir y comprar ",
+    //"image": "assets/images/splash_3.png"
+    //},
   ];
   @override
   Widget build(BuildContext context) {
@@ -70,7 +70,7 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: "Continuar",
                       press: () {
-                        Navigator.pushNamed(context, SignInScreen.routeName);
+                        Navigator.pushNamed(context, HomeScreen.routeName);
                       },
                     ),
                     Spacer(),

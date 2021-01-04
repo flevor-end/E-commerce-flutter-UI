@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:masdamas/screens/home/components/reward.dart';
 import 'categories.dart';
 import 'categories_plus.dart';
 import 'home_header.dart';
 import 'popular_products.dart';
 import 'shopping.dart';
 import 'special_offers.dart';
+import 'to_the_hand.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -27,16 +29,21 @@ class Body extends StatelessWidget {
           ),
           Categories(),
           SizedBox(
-            height: (30),
+            height: (20),
           ),
           Shopping(),
-          SpecialOffers(),
+          ToTheHand(),
           SizedBox(
-            height: (30),
+            height: (20),
           ),
+          //SpecialOffers(),
           PopularProducts(),
           SizedBox(
-            height: (30),
+            height: (20),
+          ),
+          Reward(),
+          SizedBox(
+            height: (20),
           ),
         ],
       ),

@@ -32,7 +32,7 @@ class ProductCard extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                      color: Color(0xFF343434).withOpacity(0.15),
+                      color: kSecondaryColor.withOpacity(0.15),
                       borderRadius: BorderRadius.circular(15)),
                   child: Image.asset(product.images[0]),
                 ),
@@ -97,7 +97,7 @@ class ProductCard extends StatelessWidget {
           tween: Tween(begin: 60.0, end: 0.0),
           duration: Duration(seconds: 60),
           builder: (_, value, child) => Text(
-            "00:${value.toInt()}",
+            "12:00:${value.toInt()}",
             style: TextStyle(color: kPrimaryColor),
           ),
         ),

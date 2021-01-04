@@ -36,16 +36,15 @@ class CustomBottomNavBar extends StatelessWidget {
           children: [
             IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/Shop Icon.svg",
+                  "assets/icons/BOTON4.svg",
                   color: MenuState.home == selectedMenu
                       ? kPrimaryColor
                       : inActiveIconColor,
                 ),
-                onPressed: () =>
-                    Navigator.pushNamed(context, HomeScreen.routeName)),
+                onPressed: () {}),
             IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/Heart Icon.svg",
+                  "assets/icons/BOTON3.svg",
                   color: MenuState.favourite == selectedMenu
                       ? kPrimaryColor
                       : inActiveIconColor,
@@ -53,7 +52,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () {}),
             IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/Chat bubble Icon.svg",
+                  "assets/icons/BOTON1.svg",
                   color: MenuState.message == selectedMenu
                       ? kPrimaryColor
                       : inActiveIconColor,
@@ -61,7 +60,17 @@ class CustomBottomNavBar extends StatelessWidget {
                 onPressed: () {}),
             IconButton(
               icon: SvgPicture.asset(
-                "assets/icons/User Icon.svg",
+                "assets/icons/BOTON5.svg",
+                color: MenuState.favourite == selectedMenu
+                    ? kPrimaryColor
+                    : inActiveIconColor,
+              ),
+              onPressed: () =>
+                  Navigator.pushNamed(context, ProfileScreen.routeName),
+            ),
+            IconButton(
+              icon: SvgPicture.asset(
+                "assets/icons/BOTON2.svg",
                 color: MenuState.profile == selectedMenu
                     ? kPrimaryColor
                     : inActiveIconColor,
